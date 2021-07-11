@@ -1,0 +1,7 @@
+.pokemon-wrapper {
+  display: flex;
+  border: 1px black solid;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
