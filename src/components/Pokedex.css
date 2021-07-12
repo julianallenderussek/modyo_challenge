@@ -1,0 +1,65 @@
+.previous-btn {
+    margin-top: 20px;
+    width: 150px;
+    background-color: seagreen;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid darkred;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.information-wrapper {
+    /* width: 100%; */
+}
+
+.row-buttons-pokedex {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    /* background-color: darksalmon; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px 5px 0px;
+}
+
+.next-btn {
+    margin-top: 20px;
+    width: 150px;
+    background-color: orange;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid darkred;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.pokemon-list-btn {
+    margin-top: 20px;
+    width: 200px;
+    background-color: orange;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid darkred;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.turn-off-btn {
+    margin-top: 20px;
+    width: 80px;
+    background-color: yellow;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid darkred;
+    color: darkgreen;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
