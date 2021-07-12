@@ -22,7 +22,6 @@ const PokedexSinglePokemon = () =>  {
         const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
         const response = await fetch(url)
         const data = await response.json()
-        console.log(data.id);
         if (data.id) {
             history.push(`/pokemon/${data.id}`)
         }

@@ -43,3 +43,7 @@
     font-weight: 800;
     font-size: 25px;
 }
+
+.pokemon-description-wrapper {
+    height: 400px;
+}
