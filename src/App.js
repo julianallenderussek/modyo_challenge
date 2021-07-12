@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Link} from "react-router-dom";
-import Pokemon from "./components/Pokemon";
-import HomeScreen from './pages/HomeScreen';
-import PokedexScreen from "./pages/PokedexScreen";
+import PokedexList from "./components/PokedexList";
+import PokedexSinglePokemon from "./components/PokedexSinglePokemon";
+import HomeScreen from './screens/HomeScreen';
 
 
 function App() {
@@ -10,17 +10,16 @@ function App() {
   return (
       <BrowserRouter>
         <Switch>
-          
           <Route exact path="/">
             <HomeScreen/>
           </Route>
           
           <Route exact path="/pokedex">
-            <PokedexScreen/>
+            <PokedexList/>
           </Route>
           
           <Route exact path="/pokemon/:id">
-            <Pokemon/>
+            <PokedexSinglePokemon/>
           </Route>
 
         </Switch>

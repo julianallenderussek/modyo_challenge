@@ -4,4 +4,43 @@
   width: 100%;
   justify-content: space-evenly;
   font-size: 10px;
+  align-items: center
+}
+
+.pokemon-wrapper:hover {
+  background-color: yellow;
+  align-self: center;
+  justify-self: center;
+}
+
+.pokemon-name {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.stats-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-pokemon {
+  text-decoration: none;
+}
+
+.abilities-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.types-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-pokemon-row {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

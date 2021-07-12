@@ -1,0 +1,28 @@
+.background-homescreen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../assets/imagen_pokemons.jpeg');
+    
+}
+
+.pokemon-logo {
+    width: 500px;
+}
+
+.big-start-button {
+    width: 250px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: yellow;
+    color: red;
+}
+
+.homescreen-title {
+    font-size: 45px;
+    font-weight: 800;
+    color: green;
+}
