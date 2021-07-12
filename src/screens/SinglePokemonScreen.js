@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './SinglePokemonScreen.css'
+import loadingscreen from '../components/LodingScreen'
+import LoadingScreen from '../components/LodingScreen'
 
 const SinglePokemonScreen = (props) => {
     
     const [loading, setLoading] = useState(true)
     const [pokemonData, setPokemonData] = useState()
-    // const [evolutionsData, setEvolutionsData] = useState()
     const [evolutionsArr, setEvolutionsArr] = useState()
     const pokemonId = props.id 
 
@@ -77,10 +78,10 @@ const SinglePokemonScreen = (props) => {
 
     return (
         <div className="main-wrapper-single-pokemon">
-            {loading ? <div>...Loading</div> : (
+            {loading ? <LoadingScreen/> : (
                 <div className="pokemon-details-wrapper">
                     <img className="pokemon-image-single-pokemon"src={`${pokemonData.sprites.other.dream_world.front_default}`}></img>
-                    <div>
+                    <div className="pokemon-description-wrapper">
                         <h1 className="pokemon-details-name">{pokemonData.name.toUpperCase()}</h1>
                         <p className="pokemon-details-name"> <strong>Weight:</strong> {pokemonData.weight}</p>
                         <div className="pokemon-details-abilities">

@@ -16,11 +16,9 @@ function PokedexScreen(props) {
   const fetchPokemons = async (url) =>  {
     
     try {
-      console.log(url, 'PROPS')
       const response = await fetch(url);
       const data = await response.json();
       setData(data)
-      console.log('Data:', data)
       setPreviousUrl(data.previous)
       setNextUrl(data.next)
       setPokemonList(data.results)
@@ -35,7 +33,6 @@ function PokedexScreen(props) {
   useEffect( async() => {
     setLoading(true)
     const { url } = props
-    console.log('URL FROM USEFFECT', url)
     await fetchPokemons(url)
     
   }, [props])
